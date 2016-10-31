@@ -7,24 +7,30 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-    <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
-        }({
-            instrumentationKey:"0dd9033c-5630-4a06-9dfc-6d2f711be4af"
-        });
-        
-        window.appInsights=appInsights;
-        appInsights.trackPageView();
-    </script>
 </head>
 <body>
-    <div class="container body-content">
+    <div id="page">
+        <header class="container">
+            <div id="menu" class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header active">
+                    <button class="btn btn-default navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-collapse-down"></span>
+                    </button>
+                    <a href="~/LandingPage/Index"><h4>JimWeb</h4></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav"><a href="~/LandingPage/Index">Paladin</a></li>
+                        <li class="nav"><a href="~/LandingPage/Index">Adventure Log</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         @RenderBody()
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>
 </body>
 </html>
