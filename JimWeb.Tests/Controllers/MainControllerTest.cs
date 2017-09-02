@@ -10,13 +10,13 @@ using JimWeb.Controllers;
 namespace JimWeb.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class MainControllerTest
     {
         [TestMethod]
         public void Index()
         {
             // Arrange
-            LandingPageController controller = new LandingPageController();
+            MainController controller = new MainController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;

@@ -2,9 +2,14 @@
 
 namespace JimWeb.Controllers
 {
-    public class LandingPageController : Controller
+    public class MainController : Controller
     {
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ViewResult Goal()
         {
             return View();
         }

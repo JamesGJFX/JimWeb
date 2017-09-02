@@ -5,7 +5,7 @@ using System.Web;
 
 namespace JimWeb.Models
 {
-    public class LandingPageViewModel
+    public class MainViewModel
     {
         public string temp { get; set; }
     }
