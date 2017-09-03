@@ -13,5 +13,10 @@ namespace JimWeb.Controllers
         {
             return View();
         }
+
+        public ViewResult AdventureLog()
+        {
+            return View();
+        }
     }
 }

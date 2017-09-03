@@ -1,14 +1,19 @@
 ﻿body {
     margin-top: 20px;
     background-color:dimgray;
-}
-
-h1{
     color:whitesmoke;
 }
 
-#page {
-    width:70%;
+
+
+#chapter1{
+    background-image:url(Images/chapter1.jpg)
+}
+
+#adventure-content{
+    background-color:cornsilk;
+    color:black;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .navbar-header{
